@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.alibaba.fastjson.JSON</OriginalElement>
+  <nodes>
+    <node x="361.99999999999994" y="101.0">com.alibaba.fastjson.serializer.PropertyFilter</node>
+    <node x="0.0" y="668.0">com.alibaba.fastjson.serializer.JSONSerializer</node>
+    <node x="628.0" y="668.0">com.alibaba.fastjson.serializer.ListSerializer</node>
+    <node x="230.99999999999994" y="101.0">com.alibaba.fastjson.serializer.NameFilter</node>
+    <node x="0.0" y="263.0">com.alibaba.fastjson.support.spring.PropertyPreFilters.MySimplePropertyPreFilter</node>
+    <node x="148.0" y="501.0">com.alibaba.fastjson.JSONArray</node>
+    <node x="0.0" y="339.0">com.alibaba.fastjson.JSONAware</node>
+    <node x="507.99999999999994" y="101.0">com.alibaba.fastjson.serializer.ValueFilter</node>
+    <node x="563.75" y="0.0">com.alibaba.fastjson.serializer.SerializeFilter</node>
+    <node x="887.0" y="101.0">com.alibaba.fastjson.serializer.ContextValueFilter</node>
+    <node x="212.99999999999994" y="182.0">com.alibaba.fastjson.serializer.PascalNameFilter</node>
+    <node x="768.0" y="668.0">com.alibaba.fastjson.serializer.ToStringSerializer</node>
+    <node x="615.5" y="182.0">com.alibaba.fastjson.serializer.Labels.DefaultLabelFilter</node>
+    <node x="1059.0" y="101.0">com.alibaba.fastjson.serializer.BeforeFilter</node>
+    <node x="8.999999999999943" y="182.0">com.alibaba.fastjson.serializer.SimplePropertyPreFilter</node>
+    <node x="763.0" y="101.0">com.alibaba.fastjson.serializer.AfterFilter</node>
+    <node x="96.25" y="420.0">com.alibaba.fastjson.JSON</node>
+    <node x="472.5" y="577.0">com.alibaba.fastjson.serializer.ObjectSerializer</node>
+    <node x="110.5" y="577.0">com.alibaba.fastjson.serializer.SerializeFilterable</node>
+    <node x="153.0" y="668.0">com.alibaba.fastjson.serializer.MapSerializer</node>
+    <node x="476.0" y="668.0">com.alibaba.fastjson.serializer.ArraySerializer</node>
+    <node x="636.0" y="101.0">com.alibaba.fastjson.serializer.LabelFilter</node>
+    <node x="10.0" y="501.0">com.alibaba.fastjson.JSONObject</node>
+    <node x="301.0" y="668.0">com.alibaba.fastjson.serializer.JavaBeanSerializer</node>
+    <node x="136.0" y="339.0">com.alibaba.fastjson.JSONStreamAware</node>
+    <node x="963.0" y="577.0">com.alibaba.fastjson.parser.Feature</node>
+    <node x="28.499999999999943" y="101.0">com.alibaba.fastjson.serializer.PropertyPreFilter</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.alibaba.fastjson.serializer.MapSerializer" target="com.alibaba.fastjson.serializer.SerializeFilterable">
+      <point x="-32.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.serializer.MapSerializer" target="com.alibaba.fastjson.serializer.ObjectSerializer">
+      <point x="32.0" y="-15.5" />
+      <point x="249.0" y="638.0" />
+      <point x="486.4" y="638.0" />
+      <point x="-55.60000000000002" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.serializer.ValueFilter" target="com.alibaba.fastjson.serializer.SerializeFilter">
+      <point x="0.0" y="-15.5" />
+      <point x="562.0" y="81.0" />
+      <point x="618.0" y="81.0" />
+      <point x="-7.75" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.serializer.JSONSerializer" target="com.alibaba.fastjson.serializer.SerializeFilterable">
+      <point x="0.0" y="-15.5" />
+      <point x="66.5" y="648.0" />
+      <point x="135.33333333333337" y="648.0" />
+      <point x="-49.66666666666666" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.JSON" target="com.alibaba.fastjson.JSONAware">
+      <point x="-20.0" y="-15.5" />
+      <point x="116.25" y="395.0" />
+      <point x="58.0" y="395.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.JSONObject" target="com.alibaba.fastjson.JSON">
+      <point x="0.0" y="-15.5" />
+      <point x="69.0" y="476.0" />
+      <point x="116.25" y="476.0" />
+      <point x="-20.0" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.serializer.ContextValueFilter" target="com.alibaba.fastjson.serializer.SerializeFilter">
+      <point x="0.0" y="-15.5" />
+      <point x="963.0" y="61.0" />
+      <point x="664.5" y="61.0" />
+      <point x="38.75" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.serializer.BeforeFilter" target="com.alibaba.fastjson.serializer.SerializeFilter">
+      <point x="0.0" y="-15.5" />
+      <point x="1116.5" y="51.0" />
+      <point x="680.0" y="51.0" />
+      <point x="54.25" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.serializer.AfterFilter" target="com.alibaba.fastjson.serializer.SerializeFilter">
+      <point x="0.0" y="-15.5" />
+      <point x="815.0" y="71.0" />
+      <point x="649.0" y="71.0" />
+      <point x="23.25" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.serializer.ArraySerializer" target="com.alibaba.fastjson.serializer.ObjectSerializer">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.serializer.SimplePropertyPreFilter" target="com.alibaba.fastjson.serializer.PropertyPreFilter">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.serializer.ToStringSerializer" target="com.alibaba.fastjson.serializer.ObjectSerializer">
+      <point x="0.0" y="-15.5" />
+      <point x="843.0" y="638.0" />
+      <point x="597.6" y="638.0" />
+      <point x="55.60000000000002" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.serializer.JavaBeanSerializer" target="com.alibaba.fastjson.serializer.SerializeFilterable">
+      <point x="-38.75" y="-15.5" />
+      <point x="339.75" y="628.0" />
+      <point x="234.66666666666666" y="628.0" />
+      <point x="49.66666666666666" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.serializer.JavaBeanSerializer" target="com.alibaba.fastjson.serializer.ObjectSerializer">
+      <point x="38.75" y="-15.5" />
+      <point x="417.25" y="648.0" />
+      <point x="514.2" y="648.0" />
+      <point x="-27.799999999999955" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.JSONArray" target="com.alibaba.fastjson.JSON">
+      <point x="0.0" y="-15.5" />
+      <point x="203.5" y="476.0" />
+      <point x="156.25" y="476.0" />
+      <point x="20.0" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.serializer.ListSerializer" target="com.alibaba.fastjson.serializer.ObjectSerializer">
+      <point x="0.0" y="-15.5" />
+      <point x="688.0" y="648.0" />
+      <point x="569.8" y="648.0" />
+      <point x="27.799999999999955" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.JSON" target="com.alibaba.fastjson.JSONStreamAware">
+      <point x="20.0" y="-15.5" />
+      <point x="156.25" y="395.0" />
+      <point x="214.5" y="395.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.serializer.NameFilter" target="com.alibaba.fastjson.serializer.SerializeFilter">
+      <point x="0.0" y="-15.5" />
+      <point x="286.49999999999994" y="61.0" />
+      <point x="587.0" y="61.0" />
+      <point x="-38.75" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.serializer.PropertyPreFilter" target="com.alibaba.fastjson.serializer.SerializeFilter">
+      <point x="0.0" y="-15.5" />
+      <point x="100.99999999999994" y="51.0" />
+      <point x="571.5" y="51.0" />
+      <point x="-54.25" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.serializer.Labels.DefaultLabelFilter" target="com.alibaba.fastjson.serializer.LabelFilter">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.serializer.LabelFilter" target="com.alibaba.fastjson.serializer.SerializeFilter">
+      <point x="0.0" y="-15.5" />
+      <point x="689.5" y="81.0" />
+      <point x="633.5" y="81.0" />
+      <point x="7.75" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.support.spring.PropertyPreFilters.MySimplePropertyPreFilter" target="com.alibaba.fastjson.serializer.SimplePropertyPreFilter">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.serializer.PropertyFilter" target="com.alibaba.fastjson.serializer.SerializeFilter">
+      <point x="0.0" y="-15.5" />
+      <point x="424.99999999999994" y="71.0" />
+      <point x="602.5" y="71.0" />
+      <point x="-23.25" y="15.5" />
+    </edge>
+    <edge source="com.alibaba.fastjson.serializer.PascalNameFilter" target="com.alibaba.fastjson.serializer.NameFilter">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0139240506329115" x="551.4478678537956" y="501.69886363636374" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

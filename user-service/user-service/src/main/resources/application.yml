@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/d56_open?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8&autoReconnect=true
+      username: root
+      password: root
+  application:
+    name: user-service
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8001/eureka/,http://localhost:8002/eureka/,http://localhost:8003/eureka/
+    # 客户端会维持一个只读的服务列表（缓存），该值表示多久去注册中心更新一次服务列表，默认是30s
+#    registry-fetch-interval-seconds: 30
+  instance:
+    # 客户端向注册中心发送心跳包的间隔时间，默认是30s
+#    lease-renewal-interval-in-seconds: 5
+    # 客户端失效时间，默认是90s，也就是90s内，注册中心没有收到心跳包，将会认为服务失效，会被注册中心剔除，如果开启自我保护模式，自我保护下的示例永远不会被剔除
+#    lease-expiration-duration-in-seconds: 10
+    # 在大多数情况下，我们更倾向发布服务的ip而不是${eureka.instance.hostname}，所以我们设置为true
+    prefer-ip-address: true
+    # 控制eureka服务界面服务显示，使用ip而不是：${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${server.port}}
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+logging:
+  level:
+    root: debug

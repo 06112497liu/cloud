@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://localhost:3306/d56_open?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8&autoReconnect=true
+      username: root
+      password: root
+  application:
+    name: eureka-server
+eureka:
+  client:
+    # 作为注册中心，不需要把自己注册到注册中心
+    register-with-eureka: false
+    # 是否从注册中心同步注册信息，作为单节点，不需要同步，若是多节点的注册中心，就需要同步
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+  server:
+    # 预期收到心跳的阈值比例，默认是0.85，也就是说，如果每分钟应该受到10个，阈值就是10*0.4=4，若上一分钟受到的心跳小于4，eureka将进入自我保护模式
+#    renewal-percent-threshold: 0.40
+    # 每隔多久计算一次eureka至少应该受到多少次心跳的阈值，默认是15分钟
+#    renewal-threshold-update-interval-ms: 6000
+    # 每隔多久执行清除注册表中的失去连接的服务，默认是1分钟
+#    eviction-interval-timer-in-ms: 5000
+    # 关闭eureka的自我保护，默认是开启的，生产环境建议开启
+    enable-self-preservation: true
