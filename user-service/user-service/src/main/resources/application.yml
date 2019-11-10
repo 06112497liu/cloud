@@ -23,6 +23,3 @@ eureka:
     prefer-ip-address: true
     # 控制eureka服务界面服务显示，使用ip而不是：${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${server.port}}
     instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
-logging:
-  level:
-    root: debug

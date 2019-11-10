@@ -18,11 +18,18 @@ public class UserController implements UserApi {
 
 
     @Override
-    public User get(Long id) {
+    public User getUser(Long id) {
         User user = new User();
         user.setId(id);
         user.setName("sam");
         return user;
+    }
+
+    @Override
+    public User getUser(User user, User user2) {
+        User user1 = new User();
+        user1.setName("tom");
+        return user1;
     }
 
 }
