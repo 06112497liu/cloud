@@ -28,7 +28,7 @@ public class StatisticsController {
 
     @PostMapping("/user/info")
     public Object statisticsInfo(User user) {
-        return this.userApi.getUser(user, user);
+        return this.userApi.getUser(user);
     }
 
 }

@@ -19,6 +19,7 @@ public class UserController implements UserApi {
 
     @Override
     public User getUser(Long id) {
+        System.out.println("尼玛");
         User user = new User();
         user.setId(id);
         user.setName("sam");
@@ -26,7 +27,7 @@ public class UserController implements UserApi {
     }
 
     @Override
-    public User getUser(User user, User user2) {
+    public User getUser(User user) {
         User user1 = new User();
         user1.setName("tom");
         return user1;

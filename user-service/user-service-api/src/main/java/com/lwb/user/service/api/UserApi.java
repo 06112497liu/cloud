@@ -18,7 +18,7 @@ public interface UserApi {
      * @return {@link User}
      */
     @GetMapping("/user")
-    User getUser(@RequestParam Long id);
+    User getUser(@RequestParam("id") Long id);
 
     /**
      * 查询用户信息
@@ -26,5 +26,5 @@ public interface UserApi {
      * @return {@link User}
      */
     @PostMapping("/user/info")
-    User getUser(User user, User user2);
+    User getUser(User user);
 }
