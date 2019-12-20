@@ -4,8 +4,9 @@ import com.lwb.entity.User;
 import com.lwb.user.service.api.UserApi;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.redisson.api.RedissonClient;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -16,6 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class UserController implements UserApi {
 
+    @Autowired
+    private RedissonClient redissonClient;
 
     @Override
     public User getUser(Long id) {
@@ -31,6 +34,12 @@ public class UserController implements UserApi {
         User user1 = new User();
         user1.setName("tom");
         return user1;
+    }
+
+    @GetMapping("/lockUser")
+    public void lockTest() {
+        boolean success = this.redissonClient.getLock("USER_LOCK").tryLock();
+        System.out.println(success);
     }
 
 }
