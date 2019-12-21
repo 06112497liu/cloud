@@ -1,0 +1,21 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+      # 在大多数情况下，我们更倾向发布服务的ip而不是${eureka.instance.hostname}，所以我们设置为true
+      prefer-ip-address: true
+      # 控制eureka服务界面服务显示，使用ip而不是：${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${server.port}}
+      instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+zuul:
+  routes:
+    user-service:
+      path: /api/user/**
+      strip-prefix: false
+
+
+
