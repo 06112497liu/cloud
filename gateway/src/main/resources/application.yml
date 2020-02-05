@@ -7,15 +7,17 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8001/eureka/
-      # ÔÚ´ó¶àÊıÇé¿öÏÂ£¬ÎÒÃÇ¸üÇãÏò·¢²¼·şÎñµÄip¶ø²»ÊÇ${eureka.instance.hostname}£¬ËùÒÔÎÒÃÇÉèÖÃÎªtrue
+      # åœ¨å¤§å¤šæ•°æƒ…å†µä¸‹ï¼Œæˆ‘ä»¬æ›´å€¾å‘å‘å¸ƒæœåŠ¡çš„ipè€Œä¸æ˜¯${eureka.instance.hostname}ï¼Œæ‰€ä»¥æˆ‘ä»¬è®¾ç½®ä¸ºtrue
       prefer-ip-address: true
-      # ¿ØÖÆeureka·şÎñ½çÃæ·şÎñÏÔÊ¾£¬Ê¹ÓÃip¶ø²»ÊÇ£º${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${server.port}}
+      # æ§åˆ¶eurekaæœåŠ¡ç•Œé¢æœåŠ¡æ˜¾ç¤ºï¼Œä½¿ç”¨ipè€Œä¸æ˜¯ï¼š${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${server.port}}
       instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
 zuul:
   routes:
-    user-service:
+    user-service-api:
+      service-id: user-service
       path: /api/user/**
       strip-prefix: false
+  add-host-header: true
 
 
 
