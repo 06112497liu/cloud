@@ -8,7 +8,10 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/06112497liu/cloud
+          search-paths: config-files
+          username: 06112497liu
+          password: 804912547l
 
 eureka:
   client:
@@ -16,14 +19,14 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8001/eureka/
-    # ¿Í»§¶Ë»áÎ¬³ÖÒ»¸öÖ»¶ÁµÄ·şÎñÁĞ±í£¨»º´æ£©£¬¸ÃÖµ±íÊ¾¶à¾ÃÈ¥×¢²áÖĞĞÄ¸üĞÂÒ»´Î·şÎñÁĞ±í£¬Ä¬ÈÏÊÇ30s
+    # å®¢æˆ·ç«¯ä¼šç»´æŒä¸€ä¸ªåªè¯»çš„æœåŠ¡åˆ—è¡¨ï¼ˆç¼“å­˜ï¼‰ï¼Œè¯¥å€¼è¡¨ç¤ºå¤šä¹…å»æ³¨å†Œä¸­å¿ƒæ›´æ–°ä¸€æ¬¡æœåŠ¡åˆ—è¡¨ï¼Œé»˜è®¤æ˜¯30s
   #    registry-fetch-interval-seconds: 30
   instance:
-    # ¿Í»§¶ËÏò×¢²áÖĞĞÄ·¢ËÍĞÄÌø°üµÄ¼ä¸ôÊ±¼ä£¬Ä¬ÈÏÊÇ30s
+    # å®¢æˆ·ç«¯å‘æ³¨å†Œä¸­å¿ƒå‘é€å¿ƒè·³åŒ…çš„é—´éš”æ—¶é—´ï¼Œé»˜è®¤æ˜¯30s
     #    lease-renewal-interval-in-seconds: 5
-    # ¿Í»§¶ËÊ§Ğ§Ê±¼ä£¬Ä¬ÈÏÊÇ90s£¬Ò²¾ÍÊÇ90sÄÚ£¬×¢²áÖĞĞÄÃ»ÓĞÊÕµ½ĞÄÌø°ü£¬½«»áÈÏÎª·şÎñÊ§Ğ§£¬»á±»×¢²áÖĞĞÄÌŞ³ı£¬Èç¹û¿ªÆô×ÔÎÒ±£»¤Ä£Ê½£¬×ÔÎÒ±£»¤ÏÂµÄÊ¾ÀıÓÀÔ¶²»»á±»ÌŞ³ı
+    # å®¢æˆ·ç«¯å¤±æ•ˆæ—¶é—´ï¼Œé»˜è®¤æ˜¯90sï¼Œä¹Ÿå°±æ˜¯90så†…ï¼Œæ³¨å†Œä¸­å¿ƒæ²¡æœ‰æ”¶åˆ°å¿ƒè·³åŒ…ï¼Œå°†ä¼šè®¤ä¸ºæœåŠ¡å¤±æ•ˆï¼Œä¼šè¢«æ³¨å†Œä¸­å¿ƒå‰”é™¤ï¼Œå¦‚æœå¼€å¯è‡ªæˆ‘ä¿æŠ¤æ¨¡å¼ï¼Œè‡ªæˆ‘ä¿æŠ¤ä¸‹çš„ç¤ºä¾‹æ°¸è¿œä¸ä¼šè¢«å‰”é™¤
     #    lease-expiration-duration-in-seconds: 10
-    # ÔÚ´ó¶àÊıÇé¿öÏÂ£¬ÎÒÃÇ¸üÇãÏò·¢²¼·şÎñµÄip¶ø²»ÊÇ${eureka.instance.hostname}£¬ËùÒÔÎÒÃÇÉèÖÃÎªtrue
+    # åœ¨å¤§å¤šæ•°æƒ…å†µä¸‹ï¼Œæˆ‘ä»¬æ›´å€¾å‘å‘å¸ƒæœåŠ¡çš„ipè€Œä¸æ˜¯${eureka.instance.hostname}ï¼Œæ‰€ä»¥æˆ‘ä»¬è®¾ç½®ä¸ºtrue
     prefer-ip-address: true
-    # ¿ØÖÆeureka·şÎñ½çÃæ·şÎñÏÔÊ¾£¬Ê¹ÓÃip¶ø²»ÊÇ£º${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${server.port}}
+    # æ§åˆ¶eurekaæœåŠ¡ç•Œé¢æœåŠ¡æ˜¾ç¤ºï¼Œä½¿ç”¨ipè€Œä¸æ˜¯ï¼š${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${server.port}}
     instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
