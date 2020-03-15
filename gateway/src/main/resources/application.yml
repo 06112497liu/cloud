@@ -18,6 +18,7 @@ zuul:
       service-id: user-service
       path: /api/user/**
       strip-prefix: false
+  add-host-header: true
 
 
 
