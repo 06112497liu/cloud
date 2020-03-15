@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: config-center
+server:
+  port: 10000
