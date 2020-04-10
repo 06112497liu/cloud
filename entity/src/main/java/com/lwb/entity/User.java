@@ -12,6 +12,7 @@ import java.io.Serializable;
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
+@Builder
 public class User implements Serializable {
 
     private static final long serialVersionUID = 2947233466216200520L;
