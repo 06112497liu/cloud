@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ch.qos.logback.classic.util.ContextSelectorStaticBinder</OriginalElement>
+  <nodes>
+    <node x="406.0" y="537.0">ch.qos.logback.core.ConsoleAppender</node>
+    <node x="0.0" y="233.0">ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy</node>
+    <node x="725.0" y="689.0">ch.qos.logback.classic.spi.ILoggingEvent</node>
+    <node x="519.0" y="765.0">ch.qos.logback.core.encoder.EchoEncoder</node>
+    <node x="0.0" y="309.0">ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy</node>
+    <node x="0.0" y="765.0">ch.qos.logback.classic.PatternLayout</node>
+    <node x="642.0" y="461.0">ch.qos.logback.core.net.SMTPAppenderBase</node>
+    <node x="278.0" y="233.0">ch.qos.logback.core.UnsynchronizedAppenderBase</node>
+    <node x="0.0" y="689.0">ch.qos.logback.classic.net.SMTPAppender</node>
+    <node x="605.0" y="537.0">ch.qos.logback.core.rolling.RollingPolicyBase</node>
+    <node x="167.0" y="841.0">ch.qos.logback.classic.layout.TTLLLayout</node>
+    <node x="383.0" y="613.0">ch.qos.logback.core.rolling.TriggeringPolicy</node>
+    <node x="237.0" y="385.0">ch.qos.logback.core.OutputStreamAppender</node>
+    <node x="572.0" y="613.0">ch.qos.logback.classic.selector.ContextSelector</node>
+    <node x="472.0" y="385.0">ch.qos.logback.classic.encoder.PatternLayoutEncoder</node>
+    <node x="366.0" y="689.0">ch.qos.logback.classic.LoggerContext</node>
+    <node x="636.0" y="841.0">ch.qos.logback.core.encoder.Encoder</node>
+    <node x="688.0" y="765.0">ch.qos.logback.core.rolling.RollingPolicy</node>
+    <node x="174.0" y="765.0">ch.qos.logback.classic.spi.LoggingEvent</node>
+    <node x="347.0" y="765.0">ch.qos.logback.core.FileAppender</node>
+    <node x="246.0" y="309.0">ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP</node>
+    <node x="326.0" y="841.0">ch.qos.logback.core.LayoutBase</node>
+    <node x="215.0" y="461.0">ch.qos.logback.classic.selector.ContextJNDISelector</node>
+    <node x="547.0" y="689.0">ch.qos.logback.core.AppenderBase</node>
+    <node x="484.0" y="841.0">ch.qos.logback.core.Appender</node>
+    <node x="192.0" y="613.0">ch.qos.logback.classic.spi.LoggingEventVO</node>
+    <node x="0.0" y="157.0">ch.qos.logback.core.rolling.TimeBasedFileNamingAndTriggeringPolicyBase</node>
+    <node x="0.0" y="461.0">ch.qos.logback.core.rolling.TriggeringPolicyBase</node>
+    <node x="0.0" y="81.0">ch.qos.logback.classic.util.ContextSelectorStaticBinder</node>
+    <node x="0.0" y="841.0">ch.qos.logback.core.encoder.EncoderBase</node>
+    <node x="205.0" y="537.0">ch.qos.logback.core.pattern.PatternLayoutBase</node>
+    <node x="288.0" y="0.0">ch.qos.logback.core.rolling.TimeBasedRollingPolicy</node>
+    <node x="488.0" y="309.0">ch.qos.logback.core.spi.AppenderAttachableImpl</node>
+    <node x="0.0" y="917.0">org.slf4j.Logger</node>
+    <node x="0.0" y="537.0">org.slf4j.impl.StaticLoggerBinder</node>
+    <node x="14.5" y="0.0">ch.qos.logback.classic.selector.DefaultContextSelector</node>
+    <node x="694.0" y="385.0">org.slf4j.spi.LoggerFactoryBinder</node>
+    <node x="519.0" y="0.0">ch.qos.logback.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy</node>
+    <node x="135.0" y="917.0">ch.qos.logback.core.Layout</node>
+    <node x="0.0" y="613.0">ch.qos.logback.classic.net.SocketAppender</node>
+    <node x="368.0" y="157.0">ch.qos.logback.core.rolling.TimeBasedFileNamingAndTriggeringPolicy</node>
+    <node x="549.0" y="233.0">ch.qos.logback.core.pattern.PatternLayoutEncoderBase</node>
+    <node x="0.0" y="385.0">ch.qos.logback.core.encoder.LayoutWrappingEncoder</node>
+    <node x="777.0" y="841.0">ch.qos.logback.classic.Logger</node>
+    <node x="429.0" y="461.0">ch.qos.logback.core.rolling.RollingFileAppender</node>
+    <node x="185.0" y="689.0">org.slf4j.ILoggerFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ch.qos.logback.classic.spi.LoggingEventVO" target="ch.qos.logback.classic.spi.LoggingEventVO">
+      <point x="0.0" y="0.0" />
+      <point x="265.0" y="587.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.TimeBasedRollingPolicy" target="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <point x="-46.5" y="15.5" />
+      <point x="334.5" y="-10.0" />
+      <point x="-93.0" y="7.75" />
+    </edge>
+    <edge source="ch.qos.logback.classic.spi.LoggingEvent" target="ch.qos.logback.classic.spi.LoggingEvent">
+      <point x="0.0" y="0.0" />
+      <point x="238.0" y="739.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.ConsoleAppender" target="ch.qos.logback.core.ConsoleAppender">
+      <point x="0.0" y="0.0" />
+      <point x="483.0" y="511.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.TimeBasedRollingPolicy" target="ch.qos.logback.core.rolling.TimeBasedFileNamingAndTriggeringPolicy">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.UnsynchronizedAppenderBase" target="ch.qos.logback.core.Appender">
+      <point x="0.0" y="-15.5" />
+      <point x="-26.75" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.classic.util.ContextSelectorStaticBinder" target="ch.qos.logback.classic.selector.DefaultContextSelector">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.core.OutputStreamAppender" target="ch.qos.logback.core.Layout">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.selector.DefaultContextSelector" target="ch.qos.logback.classic.LoggerContext">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.Logger" target="org.slf4j.Logger">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.classic.selector.ContextJNDISelector" target="ch.qos.logback.classic.LoggerContext">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.net.SMTPAppender" target="ch.qos.logback.classic.spi.ILoggingEvent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="org.slf4j.spi.LoggerFactoryBinder" target="org.slf4j.ILoggerFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.spi.AppenderAttachableImpl" target="ch.qos.logback.core.Appender">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.net.SMTPAppender" target="ch.qos.logback.core.net.SMTPAppenderBase">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy" target="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <point x="0.0" y="0.0" />
+      <point x="116.5" y="207.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.net.SMTPAppender" target="ch.qos.logback.classic.PatternLayout">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="org.slf4j.ILoggerFactory" target="org.slf4j.Logger">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.util.ContextSelectorStaticBinder" target="ch.qos.logback.classic.LoggerContext">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.ConsoleAppender" target="ch.qos.logback.core.OutputStreamAppender">
+      <point x="0.0" y="-15.5" />
+      <point x="-47.5" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.core.OutputStreamAppender" target="ch.qos.logback.core.OutputStreamAppender">
+      <point x="0.0" y="0.0" />
+      <point x="332.0" y="359.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.encoder.EncoderBase" target="ch.qos.logback.core.encoder.Encoder">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.RollingFileAppender" target="ch.qos.logback.core.rolling.RollingFileAppender">
+      <point x="0.0" y="0.0" />
+      <point x="513.0" y="435.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.pattern.PatternLayoutEncoderBase" target="ch.qos.logback.core.pattern.PatternLayoutEncoderBase">
+      <point x="0.0" y="0.0" />
+      <point x="651.0" y="207.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.net.SMTPAppenderBase" target="ch.qos.logback.core.pattern.PatternLayoutBase">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.spi.AppenderAttachableImpl" target="ch.qos.logback.core.spi.AppenderAttachableImpl">
+      <point x="0.0" y="0.0" />
+      <point x="586.0" y="283.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.OutputStreamAppender" target="ch.qos.logback.core.encoder.Encoder">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.pattern.PatternLayoutEncoderBase" target="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.core.net.SMTPAppenderBase" target="ch.qos.logback.core.AppenderBase">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.TimeBasedFileNamingAndTriggeringPolicyBase" target="ch.qos.logback.core.rolling.TimeBasedFileNamingAndTriggeringPolicyBase">
+      <point x="0.0" y="0.0" />
+      <point x="161.5" y="131.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy" target="ch.qos.logback.core.rolling.TimeBasedFileNamingAndTriggeringPolicyBase">
+      <point x="0.0" y="-15.5" />
+      <point x="80.75" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.core.FileAppender" target="ch.qos.logback.core.FileAppender">
+      <point x="0.0" y="0.0" />
+      <point x="410.5" y="739.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.spi.LoggingEvent" target="ch.qos.logback.classic.LoggerContext">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.encoder.EchoEncoder" target="ch.qos.logback.core.encoder.EchoEncoder">
+      <point x="0.0" y="0.0" />
+      <point x="581.0" y="739.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.TriggeringPolicyBase" target="ch.qos.logback.core.rolling.TriggeringPolicyBase">
+      <point x="0.0" y="0.0" />
+      <point x="85.0" y="435.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.spi.LoggingEventVO" target="ch.qos.logback.classic.spi.ILoggingEvent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.PatternLayout" target="ch.qos.logback.classic.spi.ILoggingEvent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.RollingFileAppender" target="ch.qos.logback.core.OutputStreamAppender">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy" target="ch.qos.logback.core.rolling.TriggeringPolicyBase">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.classic.selector.ContextSelector" target="ch.qos.logback.classic.LoggerContext">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.Logger" target="ch.qos.logback.classic.spi.LoggingEvent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.TimeBasedRollingPolicy" target="ch.qos.logback.core.rolling.TriggeringPolicy">
+      <point x="-46.5" y="-15.5" />
+      <point x="48.0" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.RollingFileAppender" target="ch.qos.logback.core.rolling.RollingPolicyBase">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.AppenderBase" target="ch.qos.logback.core.Appender">
+      <point x="0.0" y="-15.5" />
+      <point x="26.75" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy" target="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.encoder.LayoutWrappingEncoder" target="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+      <point x="0.0" y="0.0" />
+      <point x="96.0" y="359.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.TimeBasedFileNamingAndTriggeringPolicy" target="ch.qos.logback.core.rolling.TriggeringPolicy">
+      <point x="0.0" y="-15.5" />
+      <point x="-48.0" y="15.5" />
+    </edge>
+    <edge source="org.slf4j.impl.StaticLoggerBinder" target="ch.qos.logback.classic.LoggerContext">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.RollingFileAppender" target="ch.qos.logback.core.rolling.TriggeringPolicy">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.encoder.PatternLayoutEncoder" target="ch.qos.logback.classic.PatternLayout">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.encoder.EchoEncoder" target="ch.qos.logback.core.encoder.EncoderBase">
+      <point x="1.1368683772161603E-13" y="-15.5" />
+      <point x="30.5" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.TimeBasedRollingPolicy" target="ch.qos.logback.core.rolling.DefaultTimeBasedFileNamingAndTriggeringPolicy">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.Logger" target="ch.qos.logback.core.spi.AppenderAttachableImpl">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.LayoutBase" target="ch.qos.logback.core.Layout">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.classic.selector.DefaultContextSelector" target="ch.qos.logback.classic.selector.ContextSelector">
+      <point x="0.0" y="-15.5" />
+      <point x="35.75" y="15.5" />
+    </edge>
+    <edge source="org.slf4j.impl.StaticLoggerBinder" target="ch.qos.logback.classic.util.ContextSelectorStaticBinder">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy" target="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+      <point x="0.0" y="0.0" />
+      <point x="100.5" y="283.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.net.SocketAppender" target="ch.qos.logback.classic.spi.ILoggingEvent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.encoder.LayoutWrappingEncoder" target="ch.qos.logback.core.Layout">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="org.slf4j.impl.StaticLoggerBinder" target="org.slf4j.spi.LoggerFactoryBinder">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.classic.encoder.PatternLayoutEncoder" target="ch.qos.logback.core.pattern.PatternLayoutEncoderBase">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.core.LayoutBase" target="ch.qos.logback.core.LayoutBase">
+      <point x="0.0" y="0.0" />
+      <point x="382.5" y="815.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.LoggerContext" target="ch.qos.logback.classic.Logger">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.Logger" target="ch.qos.logback.core.Appender">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.OutputStreamAppender" target="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP" target="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+      <point x="0.0" y="0.0" />
+      <point x="344.5" y="283.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.RollingPolicy" target="ch.qos.logback.core.FileAppender">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.PatternLayout" target="ch.qos.logback.classic.PatternLayout">
+      <point x="0.0" y="0.0" />
+      <point x="64.5" y="739.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.Logger" target="ch.qos.logback.classic.LoggerContext">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="org.slf4j.impl.StaticLoggerBinder" target="org.slf4j.ILoggerFactory">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.spi.LoggingEvent" target="ch.qos.logback.classic.spi.ILoggingEvent">
+      <point x="0.0" y="-15.5" />
+      <point x="-33.0" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.RollingPolicyBase" target="ch.qos.logback.core.FileAppender">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.RollingFileAppender" target="ch.qos.logback.core.UnsynchronizedAppenderBase">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.TimeBasedRollingPolicy" target="ch.qos.logback.core.rolling.RollingPolicyBase">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.Logger" target="ch.qos.logback.classic.Logger">
+      <point x="0.0" y="0.0" />
+      <point x="822.0" y="815.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.net.SocketAppender" target="ch.qos.logback.classic.net.SocketAppender">
+      <point x="0.0" y="0.0" />
+      <point x="73.5" y="587.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.LoggerContext" target="ch.qos.logback.classic.LoggerContext">
+      <point x="0.0" y="0.0" />
+      <point x="434.0" y="663.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.TimeBasedFileNamingAndTriggeringPolicyBase" target="ch.qos.logback.core.rolling.TimeBasedFileNamingAndTriggeringPolicy">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.classic.net.SocketAppender" target="ch.qos.logback.core.AppenderBase">
+      <point x="0.0" y="-15.5" />
+      <point x="-33.25" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.classic.spi.LoggingEvent" target="ch.qos.logback.classic.Logger">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.encoder.LayoutWrappingEncoder" target="ch.qos.logback.core.Appender">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.TriggeringPolicyBase" target="ch.qos.logback.core.rolling.TriggeringPolicy">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.core.FileAppender" target="ch.qos.logback.core.UnsynchronizedAppenderBase">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.net.SMTPAppenderBase" target="ch.qos.logback.core.net.SMTPAppenderBase">
+      <point x="0.0" y="0.0" />
+      <point x="725.5" y="435.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.RollingFileAppender" target="ch.qos.logback.core.rolling.RollingPolicy">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.Logger" target="ch.qos.logback.classic.spi.ILoggingEvent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.encoder.LayoutWrappingEncoder" target="ch.qos.logback.core.encoder.EncoderBase">
+      <point x="0.0" y="-15.5" />
+      <point x="-30.5" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.classic.layout.TTLLLayout" target="ch.qos.logback.core.LayoutBase">
+      <point x="0.0" y="-15.5" />
+      <point x="28.25" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.classic.util.ContextSelectorStaticBinder" target="ch.qos.logback.classic.selector.ContextSelector">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.layout.TTLLLayout" target="ch.qos.logback.classic.spi.ILoggingEvent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy" target="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="org.slf4j.impl.StaticLoggerBinder" target="org.slf4j.impl.StaticLoggerBinder">
+      <point x="0.0" y="0.0" />
+      <point x="80.0" y="511.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.selector.DefaultContextSelector" target="ch.qos.logback.classic.selector.DefaultContextSelector">
+      <point x="0.0" y="0.0" />
+      <point x="106.5" y="-25.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.net.SMTPAppender" target="ch.qos.logback.core.Layout">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.FileAppender" target="ch.qos.logback.core.OutputStreamAppender">
+      <point x="0.0" y="-15.5" />
+      <point x="47.5" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.core.encoder.EncoderBase" target="ch.qos.logback.core.encoder.EncoderBase">
+      <point x="0.0" y="0.0" />
+      <point x="61.0" y="815.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.util.ContextSelectorStaticBinder" target="ch.qos.logback.classic.selector.ContextJNDISelector">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.RollingFileAppender" target="ch.qos.logback.core.FileAppender">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.classic.selector.ContextJNDISelector" target="ch.qos.logback.classic.selector.ContextJNDISelector">
+      <point x="0.0" y="0.0" />
+      <point x="299.5" y="435.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.OutputStreamAppender" target="ch.qos.logback.core.UnsynchronizedAppenderBase">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.UnsynchronizedAppenderBase" target="ch.qos.logback.core.UnsynchronizedAppenderBase">
+      <point x="0.0" y="0.0" />
+      <point x="391.0" y="207.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.RollingPolicyBase" target="ch.qos.logback.core.rolling.RollingPolicyBase">
+      <point x="0.0" y="0.0" />
+      <point x="679.5" y="511.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.net.SMTPAppender" target="ch.qos.logback.classic.net.SMTPAppender">
+      <point x="0.0" y="0.0" />
+      <point x="70.0" y="663.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP" target="ch.qos.logback.core.rolling.TimeBasedFileNamingAndTriggeringPolicyBase">
+      <point x="0.0" y="-15.5" />
+      <point x="-80.75" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.TimeBasedFileNamingAndTriggeringPolicy" target="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.util.ContextSelectorStaticBinder" target="ch.qos.logback.classic.util.ContextSelectorStaticBinder">
+      <point x="0.0" y="0.0" />
+      <point x="106.5" y="55.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.TimeBasedFileNamingAndTriggeringPolicyBase" target="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.encoder.LayoutWrappingEncoder" target="ch.qos.logback.core.OutputStreamAppender">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.net.SMTPAppenderBase" target="ch.qos.logback.core.Layout">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.PatternLayout" target="ch.qos.logback.core.LayoutBase">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.pattern.PatternLayoutBase" target="ch.qos.logback.core.LayoutBase">
+      <point x="0.0" y="-15.5" />
+      <point x="-28.25" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.classic.selector.ContextJNDISelector" target="ch.qos.logback.classic.selector.ContextSelector">
+      <point x="0.0" y="-15.5" />
+      <point x="-35.75" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.classic.encoder.PatternLayoutEncoder" target="ch.qos.logback.classic.spi.ILoggingEvent">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.pattern.PatternLayoutEncoderBase" target="ch.qos.logback.core.Layout">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.AppenderBase" target="ch.qos.logback.core.AppenderBase">
+      <point x="0.0" y="0.0" />
+      <point x="613.5" y="663.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.LoggerContext" target="org.slf4j.ILoggerFactory">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="ch.qos.logback.classic.PatternLayout" target="ch.qos.logback.core.pattern.PatternLayoutBase">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.classic.layout.TTLLLayout" target="ch.qos.logback.classic.layout.TTLLLayout">
+      <point x="0.0" y="0.0" />
+      <point x="224.0" y="815.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.pattern.PatternLayoutBase" target="ch.qos.logback.core.pattern.PatternLayoutBase">
+      <point x="0.0" y="0.0" />
+      <point x="283.0" y="511.5" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="ch.qos.logback.core.rolling.RollingPolicyBase" target="ch.qos.logback.core.rolling.RollingPolicy">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="467.0" y="96.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
